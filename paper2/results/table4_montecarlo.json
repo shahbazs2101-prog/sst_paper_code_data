@@ -1,0 +1,26 @@
+{
+  "conventional": {
+    "trip_rate_frozen": 0.012,
+    "trip_rate_sst_aware": 0.002,
+    "n_disagree": 5,
+    "sst_aware_trips_only": 0,
+    "frozen_trips_only": 5,
+    "paired_test_p": 0.0625,
+    "mean_slew_frozen": 0.3981636060100167,
+    "mean_slew_sst_aware": 0.5756260434056761,
+    "throughput_frozen": 4.761894444444444,
+    "throughput_sst_aware": 4.948994444444445
+  },
+  "sst": {
+    "trip_rate_frozen": 0.0,
+    "trip_rate_sst_aware": 0.0,
+    "n_disagree": 0,
+    "sst_aware_trips_only": 0,
+    "frozen_trips_only": 0,
+    "paired_test_p": null,
+    "mean_slew_frozen": 0.37876460767946585,
+    "mean_slew_sst_aware": 0.5643739565943239,
+    "throughput_frozen": 4.717077777777778,
+    "throughput_sst_aware": 4.951483333333334
+  }
+}

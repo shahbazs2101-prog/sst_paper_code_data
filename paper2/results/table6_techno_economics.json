@@ -1,0 +1,19 @@
+{
+  "downtime_cost_per_event": 2385.0,
+  "total_avoided_cost_pi": 2385.0021,
+  "total_avoided_cost_dqn": 2385.0029,
+  "breakeven_events_low": 2.5157202114932438,
+  "breakeven_events_high": 7.547160634479732,
+  "efficiency_penalty_annual_usd": 600.8921999999983,
+  "central_case_breakeven_years": 0.8753293755023842,
+  "paper_reported": {
+    "capex_low": 6000,
+    "capex_high": 18000,
+    "efc_cost": 8.54,
+    "downtime_cost": 2385,
+    "breakeven_low": 2.5,
+    "breakeven_high": 7.5,
+    "mc_spared_trip_rate": 0.566,
+    "efficiency_penalty_annual": 601
+  }
+}

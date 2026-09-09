@@ -1,0 +1,30 @@
+{
+  "system": {
+    "S_rated_VA": 150000.0,
+    "V_LL": 11000.0,
+    "V_phase_peak": 8981.462390204988,
+    "ma": 0.907218423253029,
+    "N_cells": 3,
+    "V1": 3300.0,
+    "f_carrier_Hz": 1000.0,
+    "XL_ohm": 16.13333333333334,
+    "L_H": 0.05135399497098492,
+    "I_rated_rms": 7.872958216222168
+  },
+  "operating_point": {
+    "delta_rad": 0.01960081481933594,
+    "delta_deg": 1.1230439641654286
+  },
+  "results": {
+    "delivered_pct_of_target": 97.4780039852829,
+    "I_rms_A": 8.04259976795437,
+    "TDD_pct": 0.6816724336339847,
+    "Isc_IL_assumed": 1667.0,
+    "TDD_limit_pct": 20.0,
+    "IEEE519_compliant": true
+  },
+  "paper_reported": {
+    "delivered_pct": 99.1,
+    "TDD_pct": 0.56
+  }
+}

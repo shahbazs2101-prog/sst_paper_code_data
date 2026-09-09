@@ -1,0 +1,22 @@
+{
+  "n_trials": 500,
+  "conv_trip_rate_pct": 59.599999999999994,
+  "sst_trip_rate_pct": 0.0,
+  "conv_only_discordant": 298,
+  "sst_only_discordant": 0,
+  "both_trip": 0,
+  "sst_untripped_median_pct": 0.0,
+  "sst_untripped_90pct_pct": 0.6320553226747165,
+  "sst_untripped_99pct_pct": 2.867576876528389,
+  "sst_untripped_max_pct": 4.433946405843599,
+  "paper_reported": {
+    "conv_trip_rate_pct": 57.8,
+    "sst_trip_rate_pct": 1.2,
+    "conv_only_discordant": 283,
+    "both_trip": 6,
+    "median_pct": 0.45,
+    "p90_pct": 1.25,
+    "p99_pct": 1.44,
+    "max_pct": 1.53
+  }
+}

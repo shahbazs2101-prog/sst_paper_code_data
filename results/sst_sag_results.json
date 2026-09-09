@@ -1,0 +1,102 @@
+[
+  {
+    "scenario": "Shallow, non-binding (30% sag, 150 ms)",
+    "depth": 0.3,
+    "duration_ms": 150.0,
+    "conventional_unbuffered": {
+      "max_dev_pct": 0.0,
+      "tripped": false,
+      "t_trip_ms": null
+    },
+    "conventional_matched": {
+      "max_dev_pct": 0.0,
+      "tripped": false,
+      "t_trip_ms": null
+    },
+    "sst": {
+      "max_dev_pct": 0.0,
+      "min_V1_pu": 1.0,
+      "tripped": false
+    }
+  },
+  {
+    "scenario": "Moderate (65% sag, 150 ms)",
+    "depth": 0.65,
+    "duration_ms": 150.0,
+    "conventional_unbuffered": {
+      "max_dev_pct": 20.0,
+      "tripped": true,
+      "t_trip_ms": 30.739999999999988
+    },
+    "conventional_matched": {
+      "max_dev_pct": 0.7473377547655531,
+      "tripped": false,
+      "t_trip_ms": null
+    },
+    "sst": {
+      "max_dev_pct": 0.0,
+      "min_V1_pu": 0.9942442252440269,
+      "tripped": false
+    }
+  },
+  {
+    "scenario": "Full interruption, 150 ms (< budget)",
+    "depth": 1.0,
+    "duration_ms": 150.0,
+    "conventional_unbuffered": {
+      "max_dev_pct": 20.0,
+      "tripped": true,
+      "t_trip_ms": 3.8600000000000856
+    },
+    "conventional_matched": {
+      "max_dev_pct": 6.145153864462827,
+      "tripped": false,
+      "t_trip_ms": null
+    },
+    "sst": {
+      "max_dev_pct": 0.0,
+      "min_V1_pu": 0.9529809208192862,
+      "tripped": false
+    }
+  },
+  {
+    "scenario": "Full interruption, 500 ms (> budget)",
+    "depth": 1.0,
+    "duration_ms": 500.0,
+    "conventional_unbuffered": {
+      "max_dev_pct": 20.0,
+      "tripped": true,
+      "t_trip_ms": 3.8600000000000856
+    },
+    "conventional_matched": {
+      "max_dev_pct": 20.0,
+      "tripped": true,
+      "t_trip_ms": 453.3
+    },
+    "sst": {
+      "max_dev_pct": 0.07137632996975185,
+      "min_V1_pu": 0.8330119609780224,
+      "tripped": false
+    }
+  },
+  {
+    "scenario": "Full interruption, 1.2 s (well beyond)",
+    "depth": 1.0,
+    "duration_ms": 1200.0,
+    "conventional_unbuffered": {
+      "max_dev_pct": 20.0,
+      "tripped": true,
+      "t_trip_ms": 3.8600000000000856
+    },
+    "conventional_matched": {
+      "max_dev_pct": 20.0,
+      "tripped": true,
+      "t_trip_ms": 453.3
+    },
+    "sst": {
+      "max_dev_pct": 1.7159796305197403,
+      "min_V1_pu": 0.515191632179161,
+      "tripped": false
+    }
+  }
+]

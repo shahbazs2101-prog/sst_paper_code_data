@@ -1,0 +1,14 @@
+[
+  {
+    "scenario": "Moderate sag (65%, 150ms) + PV/load",
+    "conventional": "tripped @ 30.7 ms",
+    "sst_max_dev_pct": 0.0,
+    "sst_min_V1_pu": 0.974750353269424
+  },
+  {
+    "scenario": "Full interruption (500ms) + PV/load",
+    "conventional": "tripped @ 3.9 ms",
+    "sst_max_dev_pct": 0.6459600353546193,
+    "sst_min_V1_pu": 0.7221407791489584
+  }
+]

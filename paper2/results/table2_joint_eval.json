@@ -1,0 +1,30 @@
+{
+  "PI baseline_conventional": {
+    "max_vdc_dev_pct": 35.15769749101166,
+    "tripped": true,
+    "t_trip_s": 300.0200000000171,
+    "dispatch_min_kw": 6.920011520385742,
+    "dispatch_max_kw": 42.985172271728516
+  },
+  "DQN_conventional": {
+    "max_vdc_dev_pct": 21.00422269086657,
+    "tripped": true,
+    "t_trip_s": 301.1400000000161,
+    "dispatch_min_kw": 0.0,
+    "dispatch_max_kw": 70.0
+  },
+  "PI baseline_sst": {
+    "max_vdc_dev_pct": 0.0,
+    "tripped": false,
+    "t_trip_s": null,
+    "dispatch_min_kw": 6.920011520385742,
+    "dispatch_max_kw": 41.60549545288086
+  },
+  "DQN_sst": {
+    "max_vdc_dev_pct": 0.0,
+    "tripped": false,
+    "t_trip_s": null,
+    "dispatch_min_kw": 0.0,
+    "dispatch_max_kw": 30.0
+  }
+}

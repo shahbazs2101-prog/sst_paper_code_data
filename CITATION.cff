@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the accompanying manuscript."
+type: software
+title: "Code and Data: Switching-Verified Design and Grid-Disturbance Ride-Through of a Three-Stage Solid-State Transformer Interface for a PV-BESS Microgrid"
+authors:
+  - given-names: Shahbaz
+    affiliation: "Power System Lab, Department of Electrical Engineering, K.K. University, Nalanda, Bihar, India"
+repository-code: "https://github.com/shahbazs2101-prog/sst_paper_code_data"
+license: MIT

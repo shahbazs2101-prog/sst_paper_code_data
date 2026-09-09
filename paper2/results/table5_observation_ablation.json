@@ -1,0 +1,25 @@
+{
+  "single_scenario": {
+    "5_input": {
+      "throughput_kwh": 4.958333333333333,
+      "mean_slew": 0.48414023372287146,
+      "max_dev_pct": 0.0,
+      "tripped": false
+    },
+    "6_input": {
+      "throughput_kwh": 4.166666666666667,
+      "mean_slew": 10.0,
+      "max_dev_pct": 0.0,
+      "tripped": false
+    }
+  },
+  "n_trial_sweep": 200,
+  "sweep": {
+    "mean_slew_5input": 0.5614357262103505,
+    "std_slew_5input": 0.15771929685842023,
+    "mean_slew_6input": 9.997078464106846,
+    "std_slew_6input": 0.015699701898000153,
+    "throughput_5input": 4.950833333333333,
+    "throughput_6input": 4.167486111111111
+  }
+}
