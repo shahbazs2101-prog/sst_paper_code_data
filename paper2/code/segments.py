@@ -44,14 +44,20 @@ def make_soc_boundary(transition_width=60.0):
 
 
 def make_grid_disturbance(grid_event=None, baseline_deficit_kw=29.0):
+    # The load function uses the exact PV realization produced for the same
+    # decision interval, avoiding a second independent PV draw.
+    pv_cache = {}
+
     def pv_fn(t, rng):
-        return pv_profile(t, rng)
+        value = pv_profile(t, rng)
+        pv_cache[round(float(t), 9)] = value
+        return value
 
     def load_fn(t, rng):
-        # This segment deliberately shares the same sampled PV realization
-        # for the load construction, so the baseline deficit is reproducible.
-        pv = pv_profile(t, rng)
-        return float(np.clip(pv + baseline_deficit_kw + rng.normal(0, 2),
+        key = round(float(t), 9)
+        if key not in pv_cache:
+            pv_cache[key] = pv_profile(t, rng)
+        return float(np.clip(pv_cache[key] + baseline_deficit_kw + rng.normal(0, 2),
                              LOAD_MIN_KW, LOAD_MAX_KW))
     return pv_fn, load_fn, grid_event
 
