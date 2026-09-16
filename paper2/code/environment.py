@@ -1,28 +1,17 @@
-"""
-environment.py
-Shared microgrid environment for Paper 2.
+"""Shared microgrid environment for Paper 2.
 
-The environment samples PV/load once per decision interval and uses the
-same samples for the observation, reward, and physical transition. This
-avoids the previous inconsistency in which _obs() and step() drew different
-random PV/load samples at the same simulation time.
+PV/load are sampled exactly once per 1 s decision interval. The sampled
+values are stored as the current exogenous state and are used consistently
+by the observation, reward calculation, and physical transition.
 """
 import numpy as np
 
-PV_RATED_KW = 100.0
-BESS_CAP_KWH = 200.0
-BESS_RATED_KW = 100.0
-SOC_MIN, SOC_MAX = 0.20, 0.90
-LOAD_MIN_KW, LOAD_MAX_KW = 60.0, 120.0
-V_DC_NOM = 800.0
-S_AGG_RATED_KVA = 150.0
-
-DECISION_DT = 1.0
-FINE_DT = 0.02
-N_SUB = int(round(DECISION_DT / FINE_DT))
-ACTUATOR_SLEW_KW_S = 50.0
-SEGMENT_LEN_S = 600.0
-N_SUB_PER_SEGMENT = int(SEGMENT_LEN_S / DECISION_DT)
+from config import (
+    PV_RATED_KW, BESS_CAP_KWH, BESS_RATED_KW, SOC_MIN, SOC_MAX,
+    LOAD_MIN_KW, LOAD_MAX_KW, V_DC_NOM, S_AGG_RATED_KVA,
+    DECISION_DT, FINE_DT, ACTUATOR_SLEW_KW_S, SEGMENT_LEN_S,
+    N_SUB, N_DECISION_STEPS,
+)
 
 
 class MicrogridEnv:
@@ -48,8 +37,8 @@ class MicrogridEnv:
         self.max_vdc_dev_pct = 0.0
         self._v1_sst = None
 
-        # One exogenous sample for the current decision interval. The same
-        # values are used by the observation and by the following transition.
+        # One exogenous realization for the current decision interval.
+        # The same stored values are returned by _obs() and consumed by step().
         self.pv_current = float(self.pv_fn(self.t, self.rng))
         self.load_current = float(self.load_fn(self.t, self.rng))
         return self._obs()
@@ -91,9 +80,8 @@ class MicrogridEnv:
             self._update_vdc(pv0, load0, self.p_batt_delivered)
             self.t += FINE_DT
 
-        # Advance the exogenous state exactly once, after the physical
-        # transition. The returned observation therefore belongs to the next
-        # decision interval.
+        # Advance exogenous state once, after the physical transition.
+        # The returned observation therefore belongs to the next interval.
         self.pv_current = float(self.pv_fn(self.t, self.rng))
         self.load_current = float(self.load_fn(self.t, self.rng))
         return self._obs(), slew_steps_at_limit / N_SUB
