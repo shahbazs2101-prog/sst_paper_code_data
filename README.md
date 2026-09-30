@@ -1,22 +1,8 @@
 # Code and Data -- Solid-State Transformer Interfaces for PV-BESS Microgrids
 
-This repository backs two papers:
+This repository contains Paper 1: **Switching-Verified Design and Grid-Disturbance Ride-Through of a Three-Stage Solid-State Transformer Interface for a PV-BESS Microgrid**. Code and manuscript are at the repository root (`code/`, `results/`, `paper/Paper1_SST_Hardware.docx`).
 
-**Paper 1** -- "Switching-Verified Design and Grid-Disturbance
-Ride-Through of a Three-Stage Solid-State Transformer Interface for a
-PV-BESS Microgrid" -- design, switching-resolution verification,
-disturbance-rejection testing, and Monte Carlo statistical analysis of a
-CHB+DAB+LV-inverter SST versus a conventional LFT+VSC interface. Code
-and manuscript are at the repository root (`code/`, `results/`,
-`paper/Paper1_SST_Hardware.docx`).
-
-**Paper 2** -- "Does a Smarter Grid Interface Change What a Supervisory
-Reinforcement-Learning Energy Manager Must Learn? Observation Design,
-Retraining, and Techno-Economics for an SST-Interfaced PV-BESS
-Microgrid" -- companion paper studying what Paper 1's interface swap
-means for a supervisory RL energy-management policy. Code, checkpoints,
-manuscript, and its own README with per-script fidelity notes are under
-`paper2/`.
+Paper 2 has a separate repository: https://github.com/shahbazs2101-prog/sst-paper2-dqn-validation. Earlier combined versions remain accessible in Git history.
 
 ## Scope note (Paper 1)
 
