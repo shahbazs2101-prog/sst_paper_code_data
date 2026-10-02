@@ -1,0 +1,45 @@
+Stage 3 MATLAB 25.2.0.2998904 (R2025b) on 20261002_104321
+  1×111 <a href="matlab:helpPopup('struct')" style="font-weight:bold">struct</a> array with fields:
+
+    Name
+    Version
+    Release
+    Date
+
+Stage 3 MATLAB initial equilibrium and energy checks passed.
+SST_nominal_25us: trip=NaN, max residual=5.00617e-07 J
+SST_nominal_12.5us: trip=NaN, max residual=4.86069e-07 J
+SST_partial_sag_25us: trip=NaN, max residual=3.1792e-07 J
+SST_partial_sag_12.5us: trip=NaN, max residual=1.05056e-08 J
+SST_short_interruption_25us: trip=NaN, max residual=3.59583e-07 J
+SST_short_interruption_12.5us: trip=NaN, max residual=1.06311e-08 J
+SST_coincident_25us: trip=0.706775, max residual=0.000180668 J
+SST_coincident_12.5us: trip=0.706775, max residual=4.48124e-05 J
+SST_phase_step_25us: trip=NaN, max residual=2.36202e-07 J
+SST_phase_step_12.5us: trip=NaN, max residual=2.65007e-08 J
+SST_high_load_interruption_25us: trip=0.594075, max residual=7.5117e-05 J
+SST_high_load_interruption_12.5us: trip=0.594063, max residual=2.04848e-06 J
+LFT_ripple_nominal_25us: trip=NaN, max residual=4.99226e-07 J
+LFT_ripple_nominal_12.5us: trip=NaN, max residual=4.8729e-07 J
+LFT_ripple_partial_sag_25us: trip=NaN, max residual=3.1884e-07 J
+LFT_ripple_partial_sag_12.5us: trip=NaN, max residual=1.07369e-08 J
+LFT_ripple_short_interruption_25us: trip=0.4038, max residual=5.55766e-05 J
+LFT_ripple_short_interruption_12.5us: trip=0.403788, max residual=1.51756e-06 J
+LFT_ripple_coincident_25us: trip=0.4043, max residual=6.71129e-06 J
+LFT_ripple_coincident_12.5us: trip=0.4043, max residual=1.50457e-05 J
+LFT_ripple_phase_step_25us: trip=NaN, max residual=2.36024e-07 J
+LFT_ripple_phase_step_12.5us: trip=NaN, max residual=2.51046e-08 J
+LFT_ripple_high_load_interruption_25us: trip=0.401675, max residual=1.29568e-05 J
+LFT_ripple_high_load_interruption_12.5us: trip=0.401663, max residual=3.35123e-07 J
+LFT_matched_nominal_25us: trip=NaN, max residual=5.61885e-07 J
+LFT_matched_nominal_12.5us: trip=NaN, max residual=5.12614e-07 J
+LFT_matched_partial_sag_25us: trip=NaN, max residual=2.90253e-07 J
+LFT_matched_partial_sag_12.5us: trip=NaN, max residual=3.08631e-08 J
+LFT_matched_short_interruption_25us: trip=NaN, max residual=3.30791e-07 J
+LFT_matched_short_interruption_12.5us: trip=NaN, max residual=3.08631e-08 J
+LFT_matched_coincident_25us: trip=NaN, max residual=4.72898e-07 J
+LFT_matched_coincident_12.5us: trip=NaN, max residual=3.08631e-08 J
+LFT_matched_phase_step_25us: trip=NaN, max residual=2.08401e-07 J
+LFT_matched_phase_step_12.5us: trip=NaN, max residual=3.08631e-08 J
+LFT_matched_high_load_interruption_25us: trip=0.595775, max residual=8.5107e-06 J
+LFT_matched_high_load_interruption_12.5us: trip=0.595775, max residual=2.00229e-06 J

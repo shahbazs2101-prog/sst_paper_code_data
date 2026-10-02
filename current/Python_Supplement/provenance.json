@@ -1,0 +1,10 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "matplotlib": "3.10.8",
+  "input_sha256": "fbc8bf6ce6713ff11b918f233381a9b6ac50f3f649fe00c149ab4b435b442095",
+  "source_status": "User-supplied BMS measurement archive with Year/DOY/MST and instrument headers; processed GHI exactly equals the Global CMP22 (vent/cor) channel clipped at zero. Download script targets the NREL MIDC endpoint for 2022-01-20. Independent server authentication was not possible.",
+  "raw_input_sha256": "ddc005c28113f1c36e641089e52fad930c1814dab3983c92ad9d622e2fc84217",
+  "processing": "Global CMP22 (vent/cor) [W/m^2], negative values clipped to zero; minute derived from MST HHMM"
+}

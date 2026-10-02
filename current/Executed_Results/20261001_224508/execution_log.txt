@@ -1,0 +1,20 @@
+Executed on 20261001_224508 with MATLAB 25.2.0.2998904 (R2025b)
+  1×111 <a href="matlab:helpPopup('struct')" style="font-weight:bold">struct</a> array with fields:
+
+    Name
+    Version
+    Release
+    Date
+
+SST_rated_interruption_12.5us: trip=0.54035 s, min LV=639.965 V, energy residual=4.94329e-08 J
+SST_short_interruption_25us: trip=NaN s, min LV=800 V, energy residual=4.12692e-08 J
+SST_coincident_25us: trip=NaN s, min LV=800 V, energy residual=4.092e-08 J
+SST_partial_sag_25us: trip=NaN s, min LV=800 V, energy residual=2.32831e-09 J
+LFT_ripple_rated_interruption_12.5us: trip=0.401537 s, min LV=639.824 V, energy residual=0 J
+LFT_ripple_short_interruption_25us: trip=0.40385 s, min LV=639.531 V, energy residual=0 J
+LFT_ripple_coincident_25us: trip=0.404475 s, min LV=639.594 V, energy residual=1.09139e-11 J
+LFT_ripple_partial_sag_25us: trip=NaN s, min LV=778.015 V, energy residual=3.49246e-09 J
+LFT_matched_rated_interruption_12.5us: trip=0.581325 s, min LV=639.994 V, energy residual=0 J
+LFT_matched_short_interruption_25us: trip=NaN s, min LV=750.59 V, energy residual=7.27596e-09 J
+LFT_matched_coincident_25us: trip=NaN s, min LV=667.128 V, energy residual=4.42378e-09 J
+LFT_matched_partial_sag_25us: trip=NaN s, min LV=799.816 V, energy residual=4.07454e-09 J

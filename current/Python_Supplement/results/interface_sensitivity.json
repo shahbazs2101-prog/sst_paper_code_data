@@ -1,0 +1,85 @@
+{
+  "nominal_aggregate_DAB_max_W": 164839.73914250036,
+  "headroom_interruption": [
+    {
+      "deficit_kW": 60,
+      "sst_effective_floor_pu": 0.85,
+      "energy_only_hold_ms": 453.29625,
+      "sst_headroom_hold_ms": 453.29625,
+      "matched_ideal_hold_ms": 453.29625
+    },
+    {
+      "deficit_kW": 90,
+      "sst_effective_floor_pu": 0.85,
+      "energy_only_hold_ms": 302.1975,
+      "sst_headroom_hold_ms": 302.1975,
+      "matched_ideal_hold_ms": 302.1975
+    },
+    {
+      "deficit_kW": 120,
+      "sst_effective_floor_pu": 0.85,
+      "energy_only_hold_ms": 226.648125,
+      "sst_headroom_hold_ms": 226.648125,
+      "matched_ideal_hold_ms": 226.648125
+    },
+    {
+      "deficit_kW": 140,
+      "sst_effective_floor_pu": 0.85,
+      "energy_only_hold_ms": 194.26982142857145,
+      "sst_headroom_hold_ms": 194.26982142857145,
+      "matched_ideal_hold_ms": 194.26982142857145
+    },
+    {
+      "deficit_kW": 150,
+      "sst_effective_floor_pu": 0.9099747474747474,
+      "energy_only_hold_ms": 181.31850000000003,
+      "sst_headroom_hold_ms": 112.34948958333344,
+      "matched_ideal_hold_ms": 181.31850000000003
+    }
+  ],
+  "paired_seed_sensitivity": [
+    {
+      "seed": 7,
+      "unbuffered_trips": 405,
+      "sst_trips": 284,
+      "matched_trips": 284,
+      "paired_outcome_disagreements": 0
+    },
+    {
+      "seed": 19,
+      "unbuffered_trips": 407,
+      "sst_trips": 264,
+      "matched_trips": 264,
+      "paired_outcome_disagreements": 0
+    },
+    {
+      "seed": 42,
+      "unbuffered_trips": 394,
+      "sst_trips": 274,
+      "matched_trips": 274,
+      "paired_outcome_disagreements": 0
+    }
+  ],
+  "energy_sweep": [
+    {
+      "energy_factor": 0.5,
+      "trips_of_500": 337
+    },
+    {
+      "energy_factor": 0.75,
+      "trips_of_500": 309
+    },
+    {
+      "energy_factor": 1,
+      "trips_of_500": 284
+    },
+    {
+      "energy_factor": 1.25,
+      "trips_of_500": 253
+    },
+    {
+      "energy_factor": 1.5,
+      "trips_of_500": 234
+    }
+  ]
+}

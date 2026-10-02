@@ -1,0 +1,97 @@
+Stage 5 MATLAB 25.2.0.2998904 (R2025b) on 20261002_114241
+  1×111 <a href="matlab:helpPopup('struct')" style="font-weight:bold">struct</a> array with fields:
+
+    Name
+    Version
+    Release
+    Date
+
+Stage 5 MATLAB initial equilibrium and energy checks passed.
+SST_case01_baseline_25us: trip=0.706775, max residual=0.000180668 J
+SST_case01_baseline_12.5us: trip=0.706775, max residual=4.48124e-05 J
+SST_case02_baseline_25us: trip=NaN, max residual=3.03064e-07 J
+SST_case02_baseline_12.5us: trip=NaN, max residual=2.55075e-08 J
+SST_case03_baseline_25us: trip=0.681125, max residual=7.48313e-05 J
+SST_case03_baseline_12.5us: trip=0.681113, max residual=1.85786e-05 J
+SST_case04_baseline_25us: trip=NaN, max residual=7.04102e-05 J
+SST_case04_baseline_12.5us: trip=NaN, max residual=1.7025e-05 J
+SST_case05_baseline_25us: trip=0.7514, max residual=7.47779e-05 J
+SST_case05_baseline_12.5us: trip=0.751387, max residual=1.85419e-05 J
+SST_case06_baseline_25us: trip=0.704675, max residual=1.36168e-05 J
+SST_case06_baseline_12.5us: trip=0.704675, max residual=3.35035e-06 J
+SST_case07_baseline_25us: trip=0.706125, max residual=0.000183775 J
+SST_case07_baseline_12.5us: trip=0.706113, max residual=5.04762e-06 J
+SST_case08_baseline_25us: trip=NaN, max residual=5.37585e-05 J
+SST_case08_baseline_12.5us: trip=NaN, max residual=1.3004e-05 J
+SST_case09_baseline_25us: trip=0.80615, max residual=0.000177059 J
+SST_case09_baseline_12.5us: trip=0.806138, max residual=4.88114e-06 J
+SST_case10_baseline_25us: trip=NaN, max residual=7.50933e-05 J
+SST_case10_baseline_12.5us: trip=NaN, max residual=1.81685e-05 J
+SST_case11_baseline_25us: trip=0.681125, max residual=7.48313e-05 J
+SST_case11_baseline_12.5us: trip=0.681113, max residual=1.85786e-05 J
+SST_case01_ramp20ms_25us: trip=NaN, max residual=5.99568e-07 J
+SST_case01_ramp20ms_12.5us: trip=NaN, max residual=2.35909e-08 J
+SST_case02_ramp20ms_25us: trip=NaN, max residual=2.55741e-07 J
+SST_case02_ramp20ms_12.5us: trip=NaN, max residual=2.15114e-08 J
+SST_case03_ramp20ms_25us: trip=0.6866, max residual=7.48376e-05 J
+SST_case03_ramp20ms_12.5us: trip=0.686588, max residual=1.85832e-05 J
+SST_case04_ramp20ms_25us: trip=NaN, max residual=2.86327e-07 J
+SST_case04_ramp20ms_12.5us: trip=NaN, max residual=1.07786e-08 J
+SST_case05_ramp20ms_25us: trip=0.756325, max residual=8.38189e-06 J
+SST_case05_ramp20ms_12.5us: trip=0.756325, max residual=2.04811e-06 J
+SST_case06_ramp20ms_25us: trip=NaN, max residual=5.56594e-07 J
+SST_case06_ramp20ms_12.5us: trip=NaN, max residual=2.49277e-08 J
+SST_case07_ramp20ms_25us: trip=NaN, max residual=5.67342e-07 J
+SST_case07_ramp20ms_12.5us: trip=NaN, max residual=2.58967e-08 J
+SST_case08_ramp20ms_25us: trip=NaN, max residual=3.66186e-07 J
+SST_case08_ramp20ms_12.5us: trip=NaN, max residual=6.25771e-08 J
+SST_case09_ramp20ms_25us: trip=NaN, max residual=5.28395e-07 J
+SST_case09_ramp20ms_12.5us: trip=NaN, max residual=3.4237e-08 J
+SST_case10_ramp20ms_25us: trip=NaN, max residual=6.34011e-07 J
+SST_case10_ramp20ms_12.5us: trip=NaN, max residual=7.81233e-08 J
+SST_case11_ramp20ms_25us: trip=0.6866, max residual=7.48376e-05 J
+SST_case11_ramp20ms_12.5us: trip=0.686588, max residual=1.85832e-05 J
+LFT_matched_case01_baseline_25us: trip=NaN, max residual=3.96156e-07 J
+LFT_matched_case01_baseline_12.5us: trip=NaN, max residual=3.08631e-08 J
+LFT_matched_case02_baseline_25us: trip=NaN, max residual=3.1825e-07 J
+LFT_matched_case02_baseline_12.5us: trip=NaN, max residual=1.40226e-08 J
+LFT_matched_case03_baseline_25us: trip=0.684, max residual=7.48059e-05 J
+LFT_matched_case03_baseline_12.5us: trip=0.683988, max residual=2.04717e-06 J
+LFT_matched_case04_baseline_25us: trip=NaN, max residual=7.0383e-05 J
+LFT_matched_case04_baseline_12.5us: trip=NaN, max residual=1.70014e-05 J
+LFT_matched_case05_baseline_25us: trip=0.754875, max residual=8.38606e-06 J
+LFT_matched_case05_baseline_12.5us: trip=0.754875, max residual=1.85224e-05 J
+LFT_matched_case06_baseline_25us: trip=NaN, max residual=3.8846e-07 J
+LFT_matched_case06_baseline_12.5us: trip=NaN, max residual=3.08631e-08 J
+LFT_matched_case07_baseline_25us: trip=NaN, max residual=4.01365e-07 J
+LFT_matched_case07_baseline_12.5us: trip=NaN, max residual=3.08631e-08 J
+LFT_matched_case08_baseline_25us: trip=NaN, max residual=5.37752e-05 J
+LFT_matched_case08_baseline_12.5us: trip=NaN, max residual=1.29949e-05 J
+LFT_matched_case09_baseline_25us: trip=NaN, max residual=3.96187e-07 J
+LFT_matched_case09_baseline_12.5us: trip=NaN, max residual=1.87563e-08 J
+LFT_matched_case10_baseline_25us: trip=NaN, max residual=7.50569e-05 J
+LFT_matched_case10_baseline_12.5us: trip=NaN, max residual=1.81418e-05 J
+LFT_matched_case11_baseline_25us: trip=0.684, max residual=7.48059e-05 J
+LFT_matched_case11_baseline_12.5us: trip=0.683988, max residual=2.04717e-06 J
+LFT_matched_case01_ramp20ms_25us: trip=NaN, max residual=3.44048e-07 J
+LFT_matched_case01_ramp20ms_12.5us: trip=NaN, max residual=2.14091e-08 J
+LFT_matched_case02_ramp20ms_25us: trip=NaN, max residual=2.67508e-07 J
+LFT_matched_case02_ramp20ms_12.5us: trip=NaN, max residual=1.30054e-08 J
+LFT_matched_case03_ramp20ms_25us: trip=0.689675, max residual=7.48348e-05 J
+LFT_matched_case03_ramp20ms_12.5us: trip=0.689663, max residual=2.04665e-06 J
+LFT_matched_case04_ramp20ms_25us: trip=NaN, max residual=2.66266e-07 J
+LFT_matched_case04_ramp20ms_12.5us: trip=NaN, max residual=2.14091e-08 J
+LFT_matched_case05_ramp20ms_25us: trip=0.760175, max residual=8.36084e-06 J
+LFT_matched_case05_ramp20ms_12.5us: trip=0.760175, max residual=1.85328e-05 J
+LFT_matched_case06_ramp20ms_25us: trip=NaN, max residual=3.46826e-07 J
+LFT_matched_case06_ramp20ms_12.5us: trip=NaN, max residual=2.14091e-08 J
+LFT_matched_case07_ramp20ms_25us: trip=NaN, max residual=3.49748e-07 J
+LFT_matched_case07_ramp20ms_12.5us: trip=NaN, max residual=2.14091e-08 J
+LFT_matched_case08_ramp20ms_25us: trip=NaN, max residual=3.79508e-07 J
+LFT_matched_case08_ramp20ms_12.5us: trip=NaN, max residual=5.29788e-08 J
+LFT_matched_case09_ramp20ms_25us: trip=NaN, max residual=3.40184e-07 J
+LFT_matched_case09_ramp20ms_12.5us: trip=NaN, max residual=1.68824e-08 J
+LFT_matched_case10_ramp20ms_25us: trip=NaN, max residual=6.05951e-07 J
+LFT_matched_case10_ramp20ms_12.5us: trip=NaN, max residual=5.73076e-08 J
+LFT_matched_case11_ramp20ms_25us: trip=0.689675, max residual=7.48348e-05 J
+LFT_matched_case11_ramp20ms_12.5us: trip=0.689663, max residual=2.04665e-06 J

@@ -1,0 +1,56 @@
+Executed on 20261001_222623 with MATLAB 25.2.0.2998904 (R2025b)
+  1×111 <a href="matlab:helpPopup('struct')" style="font-weight:bold">struct</a> array with fields:
+
+    Name
+    Version
+    Release
+    Date
+
+SST_nominal_50us: trip=NaN s, min LV=800 V, energy residual=0 J
+SST_nominal_25us: trip=NaN s, min LV=800 V, energy residual=0 J
+SST_partial_sag_50us: trip=NaN s, min LV=800 V, energy residual=8.73115e-10 J
+SST_partial_sag_25us: trip=NaN s, min LV=800 V, energy residual=2.0882e-09 J
+SST_deep_sag_50us: trip=NaN s, min LV=800 V, energy residual=1.11177e-08 J
+SST_deep_sag_25us: trip=NaN s, min LV=800 V, energy residual=2.23663e-08 J
+SST_short_interruption_50us: trip=NaN s, min LV=800 V, energy residual=1.76151e-08 J
+SST_short_interruption_25us: trip=NaN s, min LV=800 V, energy residual=3.35203e-08 J
+SST_long_interruption_50us: trip=0.8533 s, min LV=800 V, energy residual=4.41651e-08 J
+SST_long_interruption_25us: trip=0.8533 s, min LV=800 V, energy residual=8.83447e-08 J
+SST_rated_interruption_50us: trip=0.54045 s, min LV=639.084 V, energy residual=1.23546e-08 J
+SST_rated_interruption_25us: trip=0.540375 s, min LV=639.886 V, energy residual=2.45782e-08 J
+SST_coincident_50us: trip=NaN s, min LV=800 V, energy residual=3.54194e-08 J
+SST_coincident_25us: trip=NaN s, min LV=800 V, energy residual=3.69473e-08 J
+SST_cell_mismatch_50us: trip=NaN s, min LV=800 V, energy residual=7.27596e-10 J
+SST_cell_mismatch_25us: trip=NaN s, min LV=800 V, energy residual=1.73168e-09 J
+LFT_ripple_nominal_50us: trip=NaN s, min LV=800 V, energy residual=0 J
+LFT_ripple_nominal_25us: trip=NaN s, min LV=800 V, energy residual=0 J
+LFT_ripple_partial_sag_50us: trip=NaN s, min LV=778.009 V, energy residual=9.16771e-10 J
+LFT_ripple_partial_sag_25us: trip=NaN s, min LV=778.015 V, energy residual=4.00178e-10 J
+LFT_ripple_deep_sag_50us: trip=0.4045 s, min LV=638.512 V, energy residual=2.54659e-11 J
+LFT_ripple_deep_sag_25us: trip=0.404475 s, min LV=639.594 V, energy residual=1.09139e-11 J
+LFT_ripple_short_interruption_50us: trip=0.40385 s, min LV=639.531 V, energy residual=0 J
+LFT_ripple_short_interruption_25us: trip=0.40385 s, min LV=639.531 V, energy residual=0 J
+LFT_ripple_long_interruption_50us: trip=0.40385 s, min LV=639.531 V, energy residual=0 J
+LFT_ripple_long_interruption_25us: trip=0.40385 s, min LV=639.531 V, energy residual=0 J
+LFT_ripple_rated_interruption_50us: trip=0.40155 s, min LV=638.357 V, energy residual=0 J
+LFT_ripple_rated_interruption_25us: trip=0.40155 s, min LV=638.357 V, energy residual=0 J
+LFT_ripple_coincident_50us: trip=0.4045 s, min LV=638.512 V, energy residual=2.54659e-11 J
+LFT_ripple_coincident_25us: trip=0.404475 s, min LV=639.594 V, energy residual=1.09139e-11 J
+LFT_ripple_cell_mismatch_50us: trip=0.40385 s, min LV=639.531 V, energy residual=0 J
+LFT_ripple_cell_mismatch_25us: trip=0.40385 s, min LV=639.531 V, energy residual=0 J
+LFT_matched_nominal_50us: trip=NaN s, min LV=800 V, energy residual=0 J
+LFT_matched_nominal_25us: trip=NaN s, min LV=800 V, energy residual=0 J
+LFT_matched_partial_sag_50us: trip=NaN s, min LV=799.816 V, energy residual=5.67525e-10 J
+LFT_matched_partial_sag_25us: trip=NaN s, min LV=799.816 V, energy residual=9.96806e-10 J
+LFT_matched_deep_sag_50us: trip=NaN s, min LV=750.823 V, energy residual=5.45697e-10 J
+LFT_matched_deep_sag_25us: trip=NaN s, min LV=750.826 V, energy residual=1.16415e-09 J
+LFT_matched_short_interruption_50us: trip=NaN s, min LV=750.587 V, energy residual=1.01863e-09 J
+LFT_matched_short_interruption_25us: trip=NaN s, min LV=750.59 V, energy residual=6.4756e-10 J
+LFT_matched_long_interruption_50us: trip=0.8533 s, min LV=639.999 V, energy residual=0 J
+LFT_matched_long_interruption_25us: trip=0.8533 s, min LV=639.999 V, energy residual=0 J
+LFT_matched_rated_interruption_50us: trip=0.58135 s, min LV=639.969 V, energy residual=0 J
+LFT_matched_rated_interruption_25us: trip=0.581325 s, min LV=639.994 V, energy residual=0 J
+LFT_matched_coincident_50us: trip=NaN s, min LV=667.123 V, energy residual=6.1118e-10 J
+LFT_matched_coincident_25us: trip=NaN s, min LV=667.128 V, energy residual=6.69388e-10 J
+LFT_matched_cell_mismatch_50us: trip=NaN s, min LV=750.587 V, energy residual=1.00408e-09 J
+LFT_matched_cell_mismatch_25us: trip=NaN s, min LV=750.59 V, energy residual=6.33008e-10 J

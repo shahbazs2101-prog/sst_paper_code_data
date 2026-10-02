@@ -1,83 +1,40 @@
-# Code and Data -- Solid-State Transformer Interfaces for PV-BESS Microgrids
+# SST Paper 1 — current reproducibility materials
 
-This repository contains Paper 1: **Switching-Verified Design and Grid-Disturbance Ride-Through of a Three-Stage Solid-State Transformer Interface for a PV-BESS Microgrid**. Code and manuscript are at the repository root (`code/`, `results/`, `paper/Paper1_SST_Hardware.docx`).
+This repository now accompanies the finalized simulation-only manuscript in [current/Manuscript](current/Manuscript). The earlier Python reconstruction and manuscript are preserved under [legacy](legacy); they are not the current paper's authoritative results.
 
-Paper 2 has a separate repository: https://github.com/shahbazs2101-prog/sst-paper2-dqn-validation. Earlier combined versions remain accessible in Git history.
+## Current materials
+- `current/Code_MATLAB/`: development stages, kept in separate folders.
+- `current/Executed_Results/`: executed source snapshots, summary CSVs and execution logs.
+- `current/Audit/Stage6_FullStep/`: audit script, expected summary, original mixed-file report, interpretation and 132 passing full-step records.
+- `current/Python_Supplement/`: separate ideal switching, energy, balancing and irradiance sensitivity analyses.
+- `current/Manuscript/`: final coauthor-review Word and PDF manuscript.
 
-## Scope note (Paper 1)
+## Stage 6 findings
+The 132 runs cover three implementations, 11 cases, two reference variants and two time steps.
 
-These scripts implement the full manuscript methodology, including every
-reported table and figure value. Closed-form results (DAB power transfer,
-the analytic ride-through Thold formula, the PI cell-balancing gains, the
-open-loop drift-rate formula) reproduce the paper's own reported numbers
-**essentially exactly**, since they follow directly from stated equations.
-Simulation-based results are close but not bit-identical, because some
-inputs aren't specified to bit-for-bit precision in the manuscript text
-itself (see per-script notes below).
+| Implementation | Baseline trips | 20 ms ramp trips |
+|---|---:|---:|
+| Original SST | 7/11 | 3/11 |
+| SST with min–max injection | 3/11 | 3/11 |
+| Matched conventional interface | 3/11 | 3/11 |
 
-**Before treating any number here as authoritative, re-run the relevant
-script yourself and compare against the specific figure you intend to
-cite or revise.**
+Min–max injection removes four additional baseline SST overcurrent trips. Equal remaining trip counts do not imply equal failure mechanisms: the remaining SST trips are MV-cell undervoltage and the conventional trips LV undervoltage. These selected cases establish no inherent SST ride-through advantage.
 
-## Per-script fidelity notes
+Both time steps agree on trip outcomes and cause masks. All 132 expected full-step records pass the author's local audit; the mixed report also contains downsampled exports and a summary MAT outside the full-step schema. Read the audit interpretation before using its aggregate flag.
 
-| Script | Match to paper | Known gap |
-|---|---|---|
-| `sst_dab_model.py` | Essentially exact (0.18% vs paper's 0.08% max error over a 17-point sweep across d=0.10-0.50; ZVS boundary exact) | Discretization-resolution dependent, tunable |
-| `sst_chb_model.py` | Close (97.5% delivered / 0.68% TDD vs paper's 99.1% / 0.56%) | Exact filter ESR / control-angle convention not given in text |
-| `sst_losses.py` | Correct qualitative trend (efficiency rises as carrier frequency drops); CHB/full-SST efficiency run ~1-3 points optimistic (99.7%/96.9% vs paper's 98.85%/94.31%) | Uses fixed representative RMS currents per device position, not full waveform integration; manufacturer Foster-network tables not reproduced in manuscript text so representative values are used instead |
-| `sst_sim.py` | Trip timing and MV-link SOC essentially exact (e.g. 453.3ms vs 453.2ms, 0.833pu vs 0.833pu) | SST post-budget throttle-law gain approximated (paper states it qualitatively, not numerically) |
-| `sst_montecarlo.py` | Conventional trip rate near-exact (59.6% vs 57.8%); SST direction/dominance confirmed | Depends on both the throttle-law approximation above and on `sst_real_profiles.py`'s synthetic PV-event catalog (see below) -- the trip-rate split is not currently traceable to the real NREL event population the manuscript describes |
-| `sst_balancing.py` | Essentially exact on every headline number (6.412s vs 6.4s; 0.144%/0.211s vs 0.14%/0.21s; 1.053s vs 1.05s) | -- |
-| `sst_thermal_transient.py` | Correct qualitative behavior (CHB cools, DAB primary heats, SiC smallest) | Magnitudes ~5-20x off; same Foster-network limitation as sst_losses.py |
-| `sst_real_profiles.py` | N/A (data provenance) | Real NREL SRRL BMS data could not be fetched (robots.txt + network sandboxing); a documented synthetic stand-in with matching statistical character is used instead. Drop the real CSV in `data/` to override. |
+## Reproducing and checking
+For the executed Stage 6 equations, open `current/Executed_Results/Stage6_20261002_190112/executed_source/` in MATLAB/Simulink and run `RUN_STAGE6`. The author used MATLAB R2025b. This runs simulations and creates new outputs. Do not mix stage scripts in a flat folder.
 
-## Files
+To audit existing full-step records without rerunning simulations, keep `AUDIT_STAGE6_RAW.m` and `expected_stage6_summary.csv` together, run the audit script and select only the timestamp folder containing the 132 full-step records.
 
-```
-code/         10 Python scripts (simulation, analysis, plotting)
-data/         NREL solar data (synthetic stand-in unless you supply the real CSVs -- see sst_real_profiles.py)
-results/      JSON result summaries + figs/ (regenerated plots)
-```
+For separate Python analyses, install `current/Python_Supplement/requirements.txt`, enter that directory, then run `python run_all.py`, `python verify_results.py` and `python verify_data.py`. Consult that folder's README for model boundaries.
 
-## Dependencies
+## Data and limits
+The complete approximately 1.8 GB full-step MAT archive is retained by the author and is not included here. Audit hashes identify those local records. Summary/log files are not substitutes for full waveforms. Coordinate access to full records with the corresponding author; this repository does not claim a public raw-data deposit.
 
-```
-pip install -r requirements.txt
-```
+The supplied irradiance archive and processing provenance support a separate energy sensitivity. Coupled sag/demand inputs are synthetic. Models are simulations; device-level ZVS, hardware validation and field outage probabilities are not established.
 
-## Running
+## Version status
+Snapshot assembled from `SST_Paper1_Compiled_Master_v4.zip` on 2026-10-03 (India). Scientific coauthor assessment, journal choice, declarations and journal-specific requirements remain before submission. No acceptance or publication is claimed.
 
-Simplest: run everything in the correct order with one command:
-
-```bash
-cd code && python3 run_all.py
-```
-
-Or run each script standalone from inside `code/` (mind the order --
-`sst_plots.py` and `sst_graphical_abstract.py` read results/ files the
-earlier scripts produce, and `sst_montecarlo.py` reads the event catalog
-`sst_real_profiles.py` produces):
-
-```bash
-python3 sst_dab_model.py
-python3 sst_chb_model.py
-python3 sst_losses.py
-python3 sst_sim.py
-python3 sst_real_profiles.py
-python3 sst_montecarlo.py
-python3 sst_balancing.py
-python3 sst_thermal_transient.py
-python3 sst_plots.py                  # after the above have populated results/
-python3 sst_graphical_abstract.py     # after sst_losses.py and sst_montecarlo.py
-```
-
-## Data provenance
-
-`sst_real_profiles.py`'s module docstring documents exactly what could and
-could not be retrieved for the NREL SRRL BMS irradiance data, and how to
-supply the real file if you have it.
-
-## Citation
-
-See `CITATION.cff`.
+The previous repository snapshot is commit `36c31b83d7a9773e982365cbcee446e58c05689d`. Paper 2 remains in its separate repository.

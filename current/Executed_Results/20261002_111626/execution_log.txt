@@ -1,0 +1,45 @@
+Stage 4 MATLAB 25.2.0.2998904 (R2025b) on 20261002_111626
+  1×111 <a href="matlab:helpPopup('struct')" style="font-weight:bold">struct</a> array with fields:
+
+    Name
+    Version
+    Release
+    Date
+
+Stage 4 MATLAB initial equilibrium and energy checks passed.
+SST_coincident_baseline_25us: trip=0.706775, max residual=0.000180668 J
+SST_coincident_baseline_12.5us: trip=0.706775, max residual=4.48124e-05 J
+SST_short_interruption_baseline_25us: trip=NaN, max residual=3.59583e-07 J
+SST_short_interruption_baseline_12.5us: trip=NaN, max residual=1.06311e-08 J
+SST_phase_step_baseline_25us: trip=NaN, max residual=2.36202e-07 J
+SST_phase_step_baseline_12.5us: trip=NaN, max residual=2.65007e-08 J
+SST_coincident_ramp10ms_25us: trip=NaN, max residual=6.67439e-07 J
+SST_coincident_ramp10ms_12.5us: trip=NaN, max residual=3.03289e-08 J
+SST_short_interruption_ramp10ms_25us: trip=NaN, max residual=3.20194e-07 J
+SST_short_interruption_ramp10ms_12.5us: trip=NaN, max residual=1.10666e-08 J
+SST_phase_step_ramp10ms_25us: trip=NaN, max residual=2.24931e-07 J
+SST_phase_step_ramp10ms_12.5us: trip=NaN, max residual=1.10142e-08 J
+SST_coincident_ramp20ms_25us: trip=NaN, max residual=6.71761e-07 J
+SST_coincident_ramp20ms_12.5us: trip=NaN, max residual=2.46906e-08 J
+SST_short_interruption_ramp20ms_25us: trip=NaN, max residual=3.09635e-07 J
+SST_short_interruption_ramp20ms_12.5us: trip=NaN, max residual=1.08448e-08 J
+SST_phase_step_ramp20ms_25us: trip=NaN, max residual=2.27035e-07 J
+SST_phase_step_ramp20ms_12.5us: trip=NaN, max residual=1.0745e-08 J
+LFT_matched_coincident_baseline_25us: trip=NaN, max residual=4.72898e-07 J
+LFT_matched_coincident_baseline_12.5us: trip=NaN, max residual=3.08631e-08 J
+LFT_matched_short_interruption_baseline_25us: trip=NaN, max residual=3.30791e-07 J
+LFT_matched_short_interruption_baseline_12.5us: trip=NaN, max residual=3.08631e-08 J
+LFT_matched_phase_step_baseline_25us: trip=NaN, max residual=2.08401e-07 J
+LFT_matched_phase_step_baseline_12.5us: trip=NaN, max residual=3.08631e-08 J
+LFT_matched_coincident_ramp10ms_25us: trip=NaN, max residual=4.3143e-07 J
+LFT_matched_coincident_ramp10ms_12.5us: trip=NaN, max residual=2.55007e-08 J
+LFT_matched_short_interruption_ramp10ms_25us: trip=NaN, max residual=3.0133e-07 J
+LFT_matched_short_interruption_ramp10ms_12.5us: trip=NaN, max residual=2.55153e-08 J
+LFT_matched_phase_step_ramp10ms_25us: trip=NaN, max residual=2.08584e-07 J
+LFT_matched_phase_step_ramp10ms_12.5us: trip=NaN, max residual=2.55576e-08 J
+LFT_matched_coincident_ramp20ms_25us: trip=NaN, max residual=4.16049e-07 J
+LFT_matched_coincident_ramp20ms_12.5us: trip=NaN, max residual=2.14091e-08 J
+LFT_matched_short_interruption_ramp20ms_25us: trip=NaN, max residual=2.87313e-07 J
+LFT_matched_short_interruption_ramp20ms_12.5us: trip=NaN, max residual=2.13488e-08 J
+LFT_matched_phase_step_ramp20ms_25us: trip=NaN, max residual=2.03275e-07 J
+LFT_matched_phase_step_ramp20ms_12.5us: trip=NaN, max residual=2.13401e-08 J

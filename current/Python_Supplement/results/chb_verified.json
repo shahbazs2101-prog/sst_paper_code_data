@@ -1,0 +1,62 @@
+{
+  "parameters": {
+    "L_H": 0.05135399497098489,
+    "R_ohm": 0.5377777777777778,
+    "ma": 0.9072184232530289,
+    "rated_current_A": 7.87295821622217,
+    "carrier_displacement_deg": 60,
+    "f_carrier_Hz": 1000.0
+  },
+  "base": {
+    "power_W": 149999.99325472274,
+    "power_pct": 99.99999550314848,
+    "current_rms_A": 7.903707066443517,
+    "TDD_pct": 5.714693592415213e-05,
+    "THD_all_sampled_pct": 7.703937698560251,
+    "delta_rad": 0.02003024697303772,
+    "sub": 2000,
+    "dt_s": 5e-07
+  },
+  "fixed_angle_convergence": [
+    {
+      "power_W": 150000.0035528355,
+      "power_pct": 100.00000236855699,
+      "current_rms_A": 7.903707641448657,
+      "TDD_pct": 0.00024103281864704376,
+      "THD_all_sampled_pct": 7.703917643095476,
+      "delta_rad": 0.02003024697303772,
+      "sub": 1000,
+      "dt_s": 1e-06
+    },
+    {
+      "power_W": 149999.99325472274,
+      "power_pct": 99.99999550314848,
+      "current_rms_A": 7.903707066443517,
+      "TDD_pct": 5.714693592415213e-05,
+      "THD_all_sampled_pct": 7.703937698560251,
+      "delta_rad": 0.02003024697303772,
+      "sub": 2000,
+      "dt_s": 5e-07
+    },
+    {
+      "power_W": 149999.98879897993,
+      "power_pct": 99.9999925326533,
+      "current_rms_A": 7.9037067824496985,
+      "TDD_pct": 1.7188355475643562e-05,
+      "THD_all_sampled_pct": 7.703930184892604,
+      "delta_rad": 0.02003024697303772,
+      "sub": 4000,
+      "dt_s": 2.5e-07
+    }
+  ],
+  "voltage_levels": [
+    -9900.0,
+    -6600.0,
+    -3300.0,
+    0.0,
+    3300.0,
+    6600.0,
+    9900.0
+  ],
+  "harmonic_definition": "RMS harmonics 2-50 divided by rated RMS demand current; no IEEE compliance claim"
+}

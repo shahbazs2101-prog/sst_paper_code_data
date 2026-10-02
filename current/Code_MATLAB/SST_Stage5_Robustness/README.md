@@ -1,0 +1,15 @@
+# Stage 5 fixed-controller robustness sweep
+
+Add this folder beneath Code_MATLAB in the compiled project. Open RUN_STAGE5.m in MATLAB R2025b and Run. Return SST_Stage5_Executed_TIMESTAMP.zip. Retain raw_results. Previous source and results remain unchanged. This source has not been executed in MATLAB here.
+
+88 runs: 11 deterministic scenarios, SST and matched conventional, baseline and fixed 20 ms reference filter, at 25 and 12.5 microsecond steps. This may take longer than Stage 4. Each run lasts 2 s. Filter parameters, plant constants, voltage thresholds and the 1.25 current-trip multiplier are unchanged. All cases use 65% voltage sag, a 20 kW net-demand step beginning 50 ms after sag onset and ending 50 ms after restoration. Grid restoration includes a persistent -15, 0 or +15 degree phase jump, applied at the same edge as voltage restoration.
+
+The 11 cases comprise central (60 kW, 300 ms, 0 degrees); load variations at 40 and 80 kW; duration variations at 200 and 400 ms; phase variations at +/-15 degrees; and four combined load/duration/phase cases. This is a declared sparse deterministic design, not a full factorial, Monte Carlo, field probability estimate or independent validation dataset. The filter was selected using Stage 4 evidence, so label this as subsequent sensitivity testing rather than a preregistered holdout. Failures are retained and gains must not be retuned after inspecting each case.
+
+Case01's equations and parameters match Stage 4 coincident up to the 2 s horizon (Stage 4 ran 3 s). Matching trajectory, trip status, minima and peaks over that shared horizon is a review gate; unmet energy for a tripped run differs by the shorter scoring horizon. Other cases are new variations.
+
+Outputs retain full step resolution from 20 ms before to 60 ms after restoration, 1 ms samples elsewhere, and trip edges. Full-step summaries and MAT outputs are saved before decimation. Executed source and SLX accompany results. Summary also records load, duration, phase jump, trip-cause mask and integrated sag reactive-current tracking error |iq-wanted_iq| in A s. This metric uses peak dq amperes and exposes the candidate's delay trade-off. It is not a grid-code compliance score.
+
+Baseline and candidate comparisons use exactly the same disturbances within each architecture. The reference filter applies throughout the run, including sag onset; it cannot be called a pure restoration-only ramp. The conventional capacitor matches total usable SST capacitor energy including the SST LV capacitor, as in Stage 3/4. 2 s records establish only finite-horizon behavior; do not infer complete voltage settling or asymptotic stability from the final sample.
+
+Plant assumptions remain the Stage 3/4 averaged equations: RL grid plant, SRF PLL, converter voltage envelopes, forward-only SPS power, finite DAB response, proportional differential balancing, filter resistance loss and ideal latched isolation. No switching, measured NREL replay, full device losses or hardware validation is added. Source preparation assisted by ChatGPT; author execution and audit are required.

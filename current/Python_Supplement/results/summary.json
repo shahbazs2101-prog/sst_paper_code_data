@@ -1,0 +1,66 @@
+{
+  "model": "energy-deficit integration with hard undervoltage trip",
+  "grid_support_assumption": "iq_pu=min(1,2*sag_depth); id_pu=sqrt(1-iq_pu^2); Pmax=vpu*id_pu*Prated",
+  "usable_sst_energy_J": 27197.775,
+  "matched_lv_capacitance_F": 0.236091796875,
+  "unbuffered_energy_J": 230.4,
+  "full_interruption_hold_up_s": 0.45329625,
+  "source_label": {
+    "endpoint": "https://midcdmz.nrel.gov/apps/data_api.pl",
+    "site": "BMS",
+    "begin": "20220120",
+    "end": "20220120",
+    "samples": 1440
+  },
+  "supplied_trace_event_count": 3,
+  "event_definition": "at least 2 consecutive minutes >15% below a 91-minute local upper envelope",
+  "scenarios": [
+    {
+      "scenario": "30% sag, 150 ms",
+      "deficit_energy_J": 0.0,
+      "unbuffered_trip": false,
+      "sst_trip": false,
+      "matched_conventional_trip": false,
+      "sst_min_mv_pu_if_untripped": 1.0
+    },
+    {
+      "scenario": "65% sag, 150 ms",
+      "deficit_energy_J": 9000.0,
+      "unbuffered_trip": true,
+      "sst_trip": false,
+      "matched_conventional_trip": false,
+      "sst_min_mv_pu_if_untripped": 0.952980920819175
+    },
+    {
+      "scenario": "Interruption, 150 ms",
+      "deficit_energy_J": 9000.0,
+      "unbuffered_trip": true,
+      "sst_trip": false,
+      "matched_conventional_trip": false,
+      "sst_min_mv_pu_if_untripped": 0.952980920819175
+    },
+    {
+      "scenario": "Interruption, 500 ms",
+      "deficit_energy_J": 30000.0,
+      "unbuffered_trip": true,
+      "sst_trip": true,
+      "matched_conventional_trip": true,
+      "sst_min_mv_pu_if_untripped": null
+    },
+    {
+      "scenario": "Interruption, 1.2 s",
+      "deficit_energy_J": 72000.0,
+      "unbuffered_trip": true,
+      "sst_trip": true,
+      "matched_conventional_trip": true,
+      "sst_min_mv_pu_if_untripped": null
+    }
+  ],
+  "monte_carlo": {
+    "seed": 7,
+    "trials": 500,
+    "unbuffered_trip_rate_pct": 81.0,
+    "sst_trip_rate_pct": 56.8,
+    "matched_conventional_trip_rate_pct": 56.8
+  }
+}
