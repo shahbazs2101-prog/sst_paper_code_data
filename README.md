@@ -38,3 +38,10 @@ The supplied irradiance archive and processing provenance support a separate ene
 Snapshot assembled from `SST_Paper1_Compiled_Master_v4.zip` on 2026-10-03 (India). Scientific coauthor assessment, journal choice, declarations and journal-specific requirements remain before submission. No acceptance or publication is claimed.
 
 The previous repository snapshot is commit `36c31b83d7a9773e982365cbcee446e58c05689d`. Paper 2 remains in its separate repository.
+
+
+## Additional 165-case filter checks (24 November 2026)
+
+The latest filter comparison covers 11 fixed grid-disturbance cases, three interface/control versions, and five filter settings (baseline, 5, 10, 20, and 40 ms). The original SST has 7, 7, 4, 3, and 3 trips respectively; the SST with min–max control and the matched LFT each have 3 trips at every setting. These additional tests also report MV-cell voltages and DAB phase shifts.
+
+See [the filter sweep data and notes](current/Executed_Results/Filter_Sweep_20261124/README.md). The three CSV files are provided in the same folder. The full waveform archive remains local, and no new hardware validation is claimed.
