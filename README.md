@@ -1,13 +1,13 @@
 # SST Paper 1 — current reproducibility materials
 
-This repository now accompanies the finalized simulation-only manuscript in [current/Manuscript](current/Manuscript). The earlier Python reconstruction and manuscript are preserved under [legacy](legacy); they are not the current paper's authoritative results.
+This repository accompanies the simulation-only SST Paper 1 study. The newest coauthor-review version and file provenance are recorded in [the 25 November 2026 review note](current/Manuscript/REVIEW_VERSION_2026-11-25.md). Earlier manuscript binaries in [current/Manuscript](current/Manuscript) are retained as historical versions. The earlier Python reconstruction and manuscript are preserved under [legacy](legacy); they are not the current paper's authoritative results.
 
 ## Current materials
 - `current/Code_MATLAB/`: development stages, kept in separate folders.
 - `current/Executed_Results/`: executed source snapshots, summary CSVs and execution logs.
 - `current/Audit/Stage6_FullStep/`: audit script, expected summary, original mixed-file report, interpretation and 132 passing full-step records.
 - `current/Python_Supplement/`: separate ideal switching, energy, balancing and irradiance sensitivity analyses.
-- `current/Manuscript/`: final coauthor-review Word and PDF manuscript.
+- `current/Manuscript/`: earlier Word/PDF snapshots and the current coauthor-review version record.
 
 ## Stage 6 findings
 The 132 runs cover three implementations, 11 cases, two reference variants and two time steps.
@@ -45,3 +45,8 @@ The previous repository snapshot is commit `36c31b83d7a9773e982365cbcee446e58c05
 The latest filter comparison covers 11 fixed grid-disturbance cases, three interface/control versions, and five filter settings (baseline, 5, 10, 20, and 40 ms). The original SST has 7, 7, 4, 3, and 3 trips respectively; the SST with min–max control and the matched LFT each have 3 trips at every setting. These additional tests also report MV-cell voltages and DAB phase shifts.
 
 See [the filter sweep data and notes](current/Executed_Results/Filter_Sweep_20261124/README.md). The three CSV files are provided in the same folder. The full waveform archive remains local, and no new hardware validation is claimed.
+
+
+## 25 November 2026 coauthor-review archive update
+
+The author sent the unchanged 16-page `SST_Paper1_Compact_Layout.docx` to Professor Tripathi for review. See [version and SHA-256 record](current/Manuscript/REVIEW_VERSION_2026-11-25.md). The exact new manuscript binary is retained in the author archive, not uploaded by this commit. Existing source files and simulation results are unchanged. For the additional 165 runs, the [case definitions](current/Executed_Results/Filter_Sweep_20261124/eleven_case_definitions.csv), [case-by-case trip matrix](current/Executed_Results/Filter_Sweep_20261124/trip_matrix_by_case.csv) and [saved-data verification script](current/Executed_Results/Filter_Sweep_20261124/verify_saved_csv.py) are now provided. No new simulation execution or publication is claimed.
